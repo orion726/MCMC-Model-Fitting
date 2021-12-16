@@ -51,6 +51,7 @@ Dependencies:
 Also needed is the the complied RADMC3D binaries - 
 	https://www.ita.uni-heidelberg.de/~dullemond/software/radmc-3d/manual_rmcpy/download.html
 
+# Analysis Images
 
 The output analytic plots include:
 
@@ -61,9 +62,36 @@ The output analytic plots include:
 	Data/Model/Residuals
   
 
+Sample analysis figures created from the files in the *run_mcmc* folder are included in the *output_images* folder and are shown below.
+
+
+
+<figure>
+<img src="output_images/MCMC_100_PDF.png" alt="support vectors" class="aligncenter" style="width:75%">
+<figcaption> Figure 1: Posterior Distribution Functions (PDFs) of the 100x1000 link chains in the run_mcmc fodler. </figcaption>
+</figure>
+
+<figure>
+<img src="output_images/MCMC_100_walker.png" alt="support vectors" class="aligncenter" style="width:75%">
+<figcaption>Figure 2: Walkers for each parameter shown in the Figure 1. </figcaption>
+</figure>
+
+<figure>
+<img src="output_images/residuals.png" alt="support vectors" class="aligncenter" style="width:100%">
+<figcaption>Figure 3: Data/Model/Residual plot of the observational data, the best fit model, and the data minus model residuals. </figcaption>
+</figure>
+
+<figure>
+<img src="output_images/best_fit2D_density_slice.png" alt="support vectors" class="aligncenter" style="width:75%">
+<figcaption>Figure 4: 2D "slice" of the best fit disk. The plot shows the density as a function of raidus. Also included are 100 K and 200 K contours, a rough approximation of the area where the water iceline would be in the disk.  </figcaption>
+</figure>
+
+<figure>
+<img src="output_images/best_fitQ.png" alt="support vectors" class="aligncenter" style="width:75%">
+<figcaption>Figure 5: Radial plot of Toomre's Q parameter in the disk midplane. The value of Q can be used to determine whether or not a disk is gravitationally unstable. Values of q < 1.4 indicate a gravitionally unstable disk which would be prone to collapse.  </figcaption>
+</figure>
+
 # Analysis without MCMC
 
 Turn run the analysis components of the script, and not the MCMC, set *run_mcmc = False* in the *run_MCMC_L1251.py* script
 and download the *run_mcmc* folder which contains 100x1000 chains. All of the included analysis scripts can run on these files.
-
-Sample analysis figures created from the files in the *run_mcmc* folder are included in the *output_images* folder. 
