@@ -25,8 +25,7 @@ The analysis options included are:
 This script script the *mcmc_functions.py* script to load in all of the 
 functions necessary for the MCMC and analysis.
 
-
-To run this script you must have:
+The following input files (located in the fodler *input_files*) are required to run the script:
 		
 	dirty_imagejuly13.fits - A data FITS file
 	pb_imagejuly13.fits - A primary beam FITS file
@@ -34,18 +33,14 @@ To run this script you must have:
 	dustkappa_silicate.inp- The input dust opacity and scattering file 
 
 
-The following Python packages in Python 3.6.8:
+Dependencies:
 
+	Python 3.6.8
 	Numpy v1.6.2 or later
 	SciPy 0.11.0 or later
 	matplotlib 1.2.0 or later
 	AstroPy v0.3 or later or Pyfits v3.0.7
 	corner - https://doi.org/10.21105/joss.00024
-	The input dust kappa file dustkappa_silicate.inp
-
-
-The following "standard" python packages:
-
 	math
 	os
 	time
@@ -53,11 +48,11 @@ The following "standard" python packages:
 	glob
 
 
-And the complied RADMC3D binaries - 
+Also needed is the the complied RADMC3D binaries - 
 	https://www.ita.uni-heidelberg.de/~dullemond/software/radmc-3d/manual_rmcpy/download.html
 
 
-Analytic plots include:
+The output analytic plots include:
 
 	PDFs
 	walkers
@@ -65,7 +60,6 @@ Analytic plots include:
 	Radial profile of Toomre's Q parameter
 	Data/Model/Residuals
   
-The analysis plots can viewed in the output_images folder.
 
 # Analysis without MCMC
 
